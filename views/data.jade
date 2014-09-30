@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} | Chicago Inhouse Dota 2 League
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans')
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/chat.css')
+    script(src='//code.jquery.com/jquery-1.11.0.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/js/index.js')
+    title ASG Survey Data
+  body
+    .navbar.navbar-default.navbar-static-top
+      .container-fluid
+        .navbar-header
+          .navbar-brand ASG Survey Data
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.white: a(href='#') #{displayname}
+            li.white: a(href='#') My Preferences
+            li.white: a(href='/logout') Logout
+
+    h1.text-center Survey Data as PDFs:
+    div#surveypdf.center.center-block.text-center
+      a(href='/data/Survey-2014-2015') 2014-2015 Survey
+      br
+      a(href='/data/Survey-2013-2014') 2013-2014 Survey
+
+    h1.text-center More data here
+    div#moredata.center.center-block.text-center
+      a(href='#') More data
+      br
+      a(href='#') More data
+
+

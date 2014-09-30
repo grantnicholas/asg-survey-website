@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.topAligned {
+    vertical-align: top;
+}
+
+#login {
+	margin-right: 1em;
+}
+
+#login-row {
+	margin-top: 10%;
+}
+
+li, .navbar-brand {
+	font-size: 30px
+}
+
+
+.center {
+     float: none !important;
+     margin-left: auto !important;
+     margin-right: auto !important;
+}
+
+#surveypdf, #moredata{
+	font-size:30px
+}
